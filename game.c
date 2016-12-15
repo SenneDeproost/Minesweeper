@@ -38,6 +38,8 @@ if (get_cell(x, y)->state == FLAGGED) { // Is vakje gevlagd?
 
     if (nr_of_flagged_mines == NR_OF_MINES){
       printf("YOU WON!\n");
+      printf("Spel wordt afgesloten...\n");
+
       update_stats();
       show_stats();
       exit(0); // Programma wordt afgesloten met code 0 = succes.
@@ -62,12 +64,15 @@ void reveal_coordinate(int x, int y) {
 if (get_cell(x, y)->is_mine == 1 )
 {
     printf("MINE EXPLODED\n");
+    printf("Spel wordt afgesloten...\n");
+
     dead = 1;
-    print_grid();
+    //print_grid();
     draw_grid();
     update_stats();
-    show_stats(); // MOET ONDERAAN GEPRINT WORDEN !! 2 BE DEBUG
-    //exit(0);
+    show_stats();
+    sleep(2);
+    exit(0);
 }
 
 /* Als de cel geen mijn is, verander dan zijn staat van covered naar uncovered. */

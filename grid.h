@@ -37,7 +37,6 @@ struct Cell ***allocate_grid(int grid_width, int grid_height);
 
 
 
-
 /*
  * Initialiseert het veld: maakt het veld aan, plaatst mijnen op random posities
  * en zorgt er voor dat de 'neighbouring_mines' waarde voor elk vakje juist staat.

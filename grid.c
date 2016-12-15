@@ -101,6 +101,19 @@ for(int i = 0; i < grid_width; i++) {
  return grid;
 }
 
+
+void deallocate_grid(int grid_width, int grid_height){
+
+	for(int i = 0 ; i < grid_width; i++){
+		for(int j = 0 ; j < grid_height; j++){
+
+		free(grid[i][j]);
+
+	}
+}
+free(grid);
+}
+
 /************************************************************************************************************
  * De code die hieronder staat hebben jullie normaal gezien NIET nodig.										*
  * Deze code wordt gebruikt om het veld te initialiseren: om de grid-array aan te maken, mijnen te plaatsen *
@@ -166,7 +179,6 @@ static struct Coordinate* generate_random_mines(int grid_width, int grid_height,
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void initialize_grid(int grid_width, int grid_height, int nr_of_mines) {
-				printf("%s", "Lekker");
 	grid = allocate_grid(grid_width, grid_height);
 	struct Coordinate *mines_coordinates = generate_random_mines(grid_width, grid_height, nr_of_mines);
 	place_mines(mines_coordinates, nr_of_mines);
