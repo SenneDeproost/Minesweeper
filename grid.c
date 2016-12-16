@@ -1,9 +1,3 @@
-/****************************************************************
- *												MINESWEEPER												    *
- *				  					 By Senne Deproost						      			*
- *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
- ****************************************************************/
-
 #include "grid.h"
 #include "main.h"
 
@@ -112,13 +106,15 @@ for(int i = 0; i < grid_width; i++) {
 void deallocate_grid(int grid_width, int grid_height){
 
 	for(int i = 0 ; i < grid_width; i++){
-		free(grid[i]);
 		for(int j = 0 ; j < grid_height; j++){
-	  	free(grid[i][j]);
+
+		free(grid[i][j]);
 
 	}
+		free(grid[i]);
+
 }
-free(grid);
+//free(grid);
 }
 
 /************************************************************************************************************

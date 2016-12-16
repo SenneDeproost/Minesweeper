@@ -1,9 +1,3 @@
-/****************************************************************
- *												MINESWEEPER												    *
- *				  					 By Senne Deproost						      			*
- *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
- ****************************************************************/
-
 #include "printer.h"
 /*
  * In dit bestand kan je de functie print_grid uit printer.h implementeren.

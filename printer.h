@@ -1,9 +1,3 @@
-/****************************************************************
- *												MINESWEEPER												    *
- *				  					 By Senne Deproost						      			*
- *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
- ****************************************************************/
-
 #ifndef PRINTER_H_
 #define PRINTER_H_
 

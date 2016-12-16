@@ -1,7 +1,7 @@
 /****************************************************************
- *												MINESWEEPER												    *
- *				  					 By Senne Deproost						      			*
- *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
+ *                          MINESWEEPER                         *
+ *                      By Senne Deproost                       *
+ *        senne.deproost@vub.be - sennedeproost@hotmail.com     *
  ****************************************************************/
 
 #include <stdlib.h>

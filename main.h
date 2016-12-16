@@ -1,9 +1,3 @@
-/****************************************************************
- *												MINESWEEPER												    *
- *				  					 By Senne Deproost						      			*
- *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
- ****************************************************************/
-
 #ifndef MAIN_H_
 #define MAIN_H_
 

@@ -1,15 +1,9 @@
-#/***************************************************************
-# *												MINESWEEPER												    *
-# *				  					 By Senne Deproost						      			*
-# *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
-# ***************************************************************/
-
 OBJ=game.o grid.o main.o printer.o GUI.o
 HEADERS=game.h grid.h printer.h GUI.h main.h
 CC=gcc
 TARGET=minesweeper
 
-# MAKEFILE #
+# MAKEFILE #s
 
 all: $(OBJ)
 	@echo “Linking all object files”

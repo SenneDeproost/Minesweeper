@@ -1,9 +1,3 @@
-/****************************************************************
- *												MINESWEEPER												    *
- *				  					 By Senne Deproost						      			*
- *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
- ****************************************************************/
-
 #ifndef GRID_H_
 #define GRID_H_
 
@@ -40,9 +34,7 @@ struct Cell {
  */
 struct Cell ***allocate_grid(int grid_width, int grid_height);
 
-// Voor deallocatie van het grid.
 
-void deallocate_grid(int grid_width, int grid_height);
 
 
 /*
