@@ -91,7 +91,8 @@ struct Cell ***allocate_grid(int grid_width, int grid_height){
 // http://stackoverflow.com/questions/3275381/how-to-implement-a-2-dimensional-array-of-struct-in-c
 // http://stackoverflow.com/questions/26454022/storing-and-accessing-a-2d-array-in-a-struct
 
-struct Cell*** grid = (struct Cell***) malloc(sizeof(struct Cell**) * 500);
+struct Cell*** grid = (struct Cell***) malloc(sizeof(struct Cell**) * grid_width * grid_height);
+printf("%i", (grid_width*grid_height));
 for(int i = 0; i < grid_width; i++) {
 	grid[i] = (struct Cell**) malloc(sizeof(struct Cell*) * grid_height);
 	for(int j = 0; j < grid_height; j++) {

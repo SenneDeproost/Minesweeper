@@ -1,7 +1,7 @@
 OBJ=game.o grid.o main.o printer.o GUI.o
 HEADERS=game.h grid.h printer.h GUI.h main.h
 CC=gcc
-TARGET=main
+TARGET=minesweeper
 
 # MAKEFILE #s
 
