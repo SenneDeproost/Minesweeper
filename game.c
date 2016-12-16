@@ -1,7 +1,13 @@
-
+/****************************************************************
+ *												MINESWEEPER												    *
+ *				  					 By Senne Deproost						      			*
+ *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
+ ****************************************************************/
+ 
   #include "game.h"
   #include "main.h"
   #include "GUI.h"
+  #include "grid.h"
 
 /****************************************************************************************************
  *				          			     	  		TE IMPLEMENTEREN FUNCTIES:			                 			  			*
@@ -40,8 +46,11 @@ if (get_cell(x, y)->state == FLAGGED) { // Is vakje gevlagd?
       printf("YOU WON!\n");
       printf("Spel wordt afgesloten...\n");
 
+      draw_grid();
       update_stats();
       show_stats();
+      sleep(2);
+      deallocate_grid(WIDTH, HEIGHT);
       exit(0); // Programma wordt afgesloten met code 0 = succes.
     }
 
@@ -72,6 +81,7 @@ if (get_cell(x, y)->is_mine == 1 )
     update_stats();
     show_stats();
     sleep(2);
+    //deallocate_grid(WIDTH, HEIGHT);
     exit(0);
 }
 
@@ -241,6 +251,7 @@ void handle_input() {
 		break;
   case 'E': // Exit
     update_stats();
+    deallocate_grid(WIDTH, HEIGHT);
     exit(0); // Programma wordt afgesloten met code 0 = succes.
     break;
   case 'B': // Boem! Alle mijnen ontploffen

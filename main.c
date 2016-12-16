@@ -1,3 +1,9 @@
+/****************************************************************
+ *												MINESWEEPER												    *
+ *				  					 By Senne Deproost						      			*
+ *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
+ ****************************************************************/
+
 #include <stdlib.h>
 #include <time.h>
 

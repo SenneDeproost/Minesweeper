@@ -1,3 +1,9 @@
+/****************************************************************
+ *												MINESWEEPER												    *
+ *				  					 By Senne Deproost						      			*
+ *				senne.deproost@vub.be - sennedeproost@hotmail.com     *
+ ****************************************************************/
+
 #ifndef GUI_H_
 #define GUI_H_
 
