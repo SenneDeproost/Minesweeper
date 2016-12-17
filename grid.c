@@ -92,7 +92,6 @@ struct Cell ***allocate_grid(int grid_width, int grid_height){
 // http://stackoverflow.com/questions/26454022/storing-and-accessing-a-2d-array-in-a-struct
 
 struct Cell*** grid = (struct Cell***) malloc(sizeof(struct Cell**) * grid_width * grid_height);
-printf("%i", (grid_width*grid_height));
 for(int i = 0; i < grid_width; i++) {
 	grid[i] = (struct Cell**) malloc(sizeof(struct Cell*) * grid_height);
 	for(int j = 0; j < grid_height; j++) {
@@ -114,7 +113,7 @@ void deallocate_grid(int grid_width, int grid_height){
 		free(grid[i]);
 
 }
-//free(grid);
+free(grid);
 }
 
 /************************************************************************************************************
